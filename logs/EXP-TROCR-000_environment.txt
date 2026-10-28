@@ -1,0 +1,26 @@
+Experiment: EXP-TROCR-000 - Initial environment inspection 
+Date: 26 October 2026 
+Status: Initial environment verification completed 
+Python: 3.12 
+Python executable: C:\Users\emedi\OneDrive - Coventry University\PROJECT DOCUMENTS\MSC-PyTorch-TrOCR-GPU\venv\Scripts\python.exe
+PyTorch: 2.14.1+cu126
+PyTorch CUDA runtime: 12.6
+CUDA available: True
+GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+filelock==3.32.3
+fsspec==2026.7.0
+Jinja2==3.1.6
+MarkupSafe==3.0.3
+mpmath==1.3.0
+networkx==3.6.1
+numpy==2.5.2
+pillow==12.3.0
+setuptools==78.1.0
+sympy==1.14.0
+torch==2.14.1+cu126
+torchvision==0.29.1+cu126
+typing_extensions==4.16.0
+GPU matrix multiplication test: SUCCESS 
+GPU device: cuda:0 
+Matrix dimensions: 1000 x 1000 
+Synchronization: torch.cuda.synchronize() completed 
