@@ -1,0 +1,62 @@
+YOLO-PREDICTED VIN-LINE TrOCR DATASET
+============================================================
+
+DETECTION SETTINGS
+------------------------------------------------------------
+Weights: C:\Users\emedi\OneDrive - Coventry University\PROJECT DOCUMENTS\MSC-VIN-YOLOv5\results\EXP-VIN-YOLO-DET-004\weights\best.pt
+Image size: 960
+Confidence threshold: 0.05
+IoU threshold: 0.45
+Device: 0
+Annotated full images: Saved
+Prediction label files: Saved
+Individual character crops: Not generated
+
+SPLIT RESULTS
+------------------------------------------------------------
+TRAIN
+  Original images: 460
+  Included TrOCR crops: 460
+  Skipped images: 0
+  Total predicted boxes: 13047
+
+VALID
+  Original images: 101
+  Included TrOCR crops: 101
+  Skipped images: 0
+  Total predicted boxes: 2860
+
+TEST
+  Original images: 51
+  Included TrOCR crops: 51
+  Skipped images: 0
+  Total predicted boxes: 1465
+
+OVERALL RESULTS
+------------------------------------------------------------
+Total original images: 612
+Total included crops: 612
+Total skipped images: 0
+Total predicted character boxes: 17372
+
+GROUND-TRUTH VIN LENGTH DISTRIBUTION
+------------------------------------------------------------
+17 characters: 612
+
+MANIFEST FILES
+------------------------------------------------------------
+rec_gt_train.txt
+rec_gt_valid.txt
+rec_gt_test.txt
+
+MANIFEST FORMAT
+------------------------------------------------------------
+relative_crop_path<TAB>ground_truth_VIN
+Crop paths are relative to the recognition dataset root.
+
+IMPORTANT
+------------------------------------------------------------
+YOLO predicted boxes were used to determine crop coordinates.
+Original ground-truth labels were used to reconstruct VIN text.
+YOLO predicted character classes were not used as TrOCR labels.
+Train, validation and test splits were kept separate.
