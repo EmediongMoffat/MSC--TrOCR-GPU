@@ -5,3 +5,19 @@ checkpoints/
 __pycache__/ 
 *.pyc 
 .cache/ 
+
+# Trained model weights and checkpoints
+models/
+results/**/best_model/
+results/**/checkpoints/
+results/**/*.pt
+results/**/*.pth
+results/**/*.safetensors
+
+# Dataset-derived images and prediction records
+results/**/recognition_examples/
+results/**/*.jpg
+results/**/*.png
+results/**/predictions*.csv
+results/**/failures.csv
+results/**/predictions/

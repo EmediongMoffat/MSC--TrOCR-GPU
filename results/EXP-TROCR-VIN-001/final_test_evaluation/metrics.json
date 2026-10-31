@@ -1,0 +1,74 @@
+{
+    "experiment": "EXP-TROCR-VIN-001",
+    "checkpoint": "C:\\Users\\emedi\\OneDrive - Coventry University\\PROJECT DOCUMENTS\\MSC-PyTorch-TrOCR-GPU\\results\\EXP-TROCR-VIN-001\\best_model",
+    "test_dataset": "C:\\Users\\emedi\\OneDrive - Coventry University\\PROJECT DOCUMENTS\\MSC-PyTorch-TrOCR-GPU\\data\\processed\\TROCR_ONLY_RECOGNITION\\rec_gt_test.txt",
+    "number_of_test_images": 51,
+    "normalisation": "Uppercase, remove spaces, strip leading/trailing whitespace. No character substitutions.",
+    "image_level": {
+        "correct": 42,
+        "fail": 9,
+        "exact_string_accuracy": 0.8235294117647058,
+        "string_error_rate": 0.17647058823529413
+    },
+    "character_level": {
+        "total_ground_truth_characters": 867,
+        "character_matches": 860,
+        "aligned_character_accuracy": 0.9919261822376009,
+        "total_edit_distance": 12,
+        "CER": 0.01384083044982699,
+        "F1_micro": 0.9896432681242808,
+        "F1_macro": 0.9705202648169359,
+        "F1_macro_classes": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "C",
+            "D",
+            "E",
+            "G",
+            "H",
+            "J",
+            "L",
+            "R",
+            "S",
+            "T",
+            "X",
+            "Y"
+        ]
+    },
+    "inference": {
+        "warmup_runs": 10,
+        "batch_size": 1,
+        "precision": "FP16",
+        "full_pipeline": {
+            "mean_ms": 254.66905882486196,
+            "median_ms": 254.76979999803007,
+            "p95_ms": 278.5275500064017,
+            "images_per_second": 3.926664686375224
+        },
+        "model_only": {
+            "mean_ms": 201.24388039203396,
+            "median_ms": 198.88310000533238,
+            "p95_ms": 218.9702000032412,
+            "images_per_second": 4.96909519957549
+        }
+    },
+    "hardware": {
+        "device": "cuda",
+        "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+        "total_gpu_memory_mb": 6140.5,
+        "test_peak_gpu_memory_allocated_mb": 1312.2880859375,
+        "test_peak_gpu_memory_reserved_mb": 1362.0
+    },
+    "training_curve": "C:\\Users\\emedi\\OneDrive - Coventry University\\PROJECT DOCUMENTS\\MSC-PyTorch-TrOCR-GPU\\results\\EXP-TROCR-VIN-001\\final_test_evaluation\\training_loss_curve.png",
+    "predictions_csv": "C:\\Users\\emedi\\OneDrive - Coventry University\\PROJECT DOCUMENTS\\MSC-PyTorch-TrOCR-GPU\\results\\EXP-TROCR-VIN-001\\final_test_evaluation\\predictions.csv",
+    "failures_csv": "C:\\Users\\emedi\\OneDrive - Coventry University\\PROJECT DOCUMENTS\\MSC-PyTorch-TrOCR-GPU\\results\\EXP-TROCR-VIN-001\\final_test_evaluation\\failures.csv",
+    "important_note": "GPU peak memory in this report is measured during final test evaluation. It is not the historical peak memory used during model training."
+}

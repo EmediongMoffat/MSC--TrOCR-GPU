@@ -1,0 +1,67 @@
+# TrOCR VIN fine-tuning configuration
+# Edit values in this file before running scripts/train_trocr.py.
+# Paths are relative to the project root: MSC-PyTorch-TrOCR-GPU/
+
+project:
+  experiment_name: "EXP-TROCR-VIN-002"
+  seed: 42
+
+model:
+  pretrained_checkpoint: "microsoft/trocr-base-printed"
+  image_width: 768
+  image_height: 128
+  preserve_aspect_ratio: true
+  padding_colour: "white"
+  disable_processor_resize: true
+  interpolate_pos_encoding: true
+  max_target_length: 32
+
+data:
+  dataset_root: "data/processed/TROCR_YOLO_PREDICTED_LINE_RECOGNITION"
+  train_manifest: "rec_gt_train.txt"
+  validation_manifest: "rec_gt_valid.txt"
+  test_manifest: "rec_gt_test.txt"
+  batch_size: 4
+  num_workers: 0
+
+training:
+  epochs: 100
+  learning_rate: 0.00005
+  optimizer: "AdamW"
+  weight_decay: 0.01
+  gradient_accumulation_steps: 2
+  gradient_clipping: 1.0
+  mixed_precision: "fp16"
+  warmup_ratio: 0.05
+  early_stopping: true
+  early_stopping_patience: 5
+
+evaluation:
+  run_validation_each_epoch: true
+  calculate_exact_string_accuracy: true
+  calculate_character_accuracy: true
+  calculate_cer: true
+  calculate_string_error_rate: true
+  generation_num_beams: 1
+  generation_max_length: 32
+
+checkpoints:
+  output_directory: "results/EXP-TROCR-VIN-002"
+  save_after_every_epoch: true
+  save_optimizer_and_scheduler: true
+  keep_last_n_checkpoints: 3
+  keep_best_model_separately: true
+  resume_from_latest_if_available: false
+
+reproducibility:
+  deterministic: true
+  log_training_time: true
+  save_config_copy_with_results: true
+  save_epoch_metrics_csv: true
+
+# Important:
+# - Use validation data for epoch-by-epoch model selection.
+# - Keep the test set untouched until final evaluation.
+# - A checkpoint is written after every epoch. The script will retain the
+#   latest 3 resumable checkpoints plus the separately saved best model.
+# - These are initial experimental settings, not proven optimal values.

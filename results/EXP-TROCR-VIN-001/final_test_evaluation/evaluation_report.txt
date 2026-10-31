@@ -1,0 +1,71 @@
+=================================================================
+FINAL OCR EVALUATION: EXP-TROCR-VIN-001
+=================================================================
+
+IMAGE-LEVEL RESULTS
+-----------------------------------------------------------------
+Test images: 51
+Correct VINs: 42
+Failed VINs: 9
+Exact-string accuracy: 82.35%
+String error rate: 17.65%
+
+CHARACTER-LEVEL RESULTS
+-----------------------------------------------------------------
+Total GT characters: 867
+Character matches: 860
+Aligned character accuracy: 99.19%
+Total edit distance: 12
+CER: 1.38%
+Character micro-F1: 0.9896
+Character macro-F1: 0.9705
+
+FULL PIPELINE INFERENCE
+-----------------------------------------------------------------
+Mean: 254.67 ms/image
+Median: 254.77 ms/image
+P95: 278.53 ms/image
+Throughput: 3.93 images/second
+
+MODEL-ONLY INFERENCE
+-----------------------------------------------------------------
+Mean: 201.24 ms/image
+Median: 198.88 ms/image
+P95: 218.97 ms/image
+Throughput: 4.97 images/second
+
+HARDWARE
+-----------------------------------------------------------------
+Device: cuda
+GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+Precision: FP16
+Batch size: 1
+Test peak allocated GPU memory: 1312.29 MB
+Test peak reserved GPU memory: 1362.00 MB
+Total GPU memory: 6140.50 MB
+
+FAILURE ANALYSIS
+-----------------------------------------------------------------
+FAIL #5: GT=5J8TC2H42SL023581 | PRED=5J8TC2H42SL023681 | Edits=1
+FAIL #6: GT=5J8TC2H46SL023597 | PRED=5J8TC2H46SL023697 | Edits=1
+FAIL #14: GT=5J8TC2H75SL023679 | PRED=5J8TC2H75SL023697 | Edits=2
+FAIL #19: GT=5J6RS3H72SL010805 | PRED=5J6RS3H72SL010605 | Edits=1
+FAIL #27: GT=5J6RS4H4XSL020106 | PRED=5J6RS4H4H4XSL020106 | Edits=2
+FAIL #29: GT=5J6RS6H96SL039503 | PRED=5J6RS6H96SL039603 | Edits=1
+FAIL #41: GT=5J6RS6H93SL039183 | PRED=5J6RS6H93SL039163 | Edits=1
+FAIL #47: GT=1HGRS5895SL903975 | PRED=1HGGGRS5895SL903975 | Edits=2
+FAIL #48: GT=5J8YE1H06SL803400 | PRED=5J8YE1H06SL803300 | Edits=1
+
+OUTPUT FILES
+-----------------------------------------------------------------
+C:\Users\emedi\OneDrive - Coventry University\PROJECT DOCUMENTS\MSC-PyTorch-TrOCR-GPU\results\EXP-TROCR-VIN-001\final_test_evaluation\predictions.csv
+C:\Users\emedi\OneDrive - Coventry University\PROJECT DOCUMENTS\MSC-PyTorch-TrOCR-GPU\results\EXP-TROCR-VIN-001\final_test_evaluation\failures.csv
+C:\Users\emedi\OneDrive - Coventry University\PROJECT DOCUMENTS\MSC-PyTorch-TrOCR-GPU\results\EXP-TROCR-VIN-001\final_test_evaluation\metrics.json
+C:\Users\emedi\OneDrive - Coventry University\PROJECT DOCUMENTS\MSC-PyTorch-TrOCR-GPU\results\EXP-TROCR-VIN-001\final_test_evaluation\training_loss_curve.png
+
+IMPORTANT
+-----------------------------------------------------------------
+Peak GPU memory is from final test evaluation, not historical training.
+Full pipeline timing includes image loading, preprocessing and TrOCR generation.
+Model-only timing includes TrOCR generation using preprocessed tensors.
+Character accuracy is aligned matching characters divided by total ground-truth characters. CER uses total Levenshtein edit distance divided by total ground-truth characters. They are not necessarily complements when insertions occur.

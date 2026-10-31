@@ -1,0 +1,29 @@
+TROCR VIN TRAINING SUMMARY
+============================================================
+
+experiment: EXP-TROCR-VIN-002
+pretrained_model: microsoft/trocr-base-printed
+completed_epochs: 7
+best_epoch: 2
+best_validation_loss: 0.04290653037432913
+batch_size: 4
+gradient_accumulation_steps: 2
+effective_batch_size: 8
+learning_rate: 5e-05
+optimizer: AdamW
+loss_function: CrossEntropyLoss (ignore_index=-100)
+training_time_seconds: 1086.9041475999984
+training_time_minutes: 18.11506912666664
+device: cuda
+gpu_name: NVIDIA GeForce RTX 4050 Laptop GPU
+gpu_peak_allocated_gb: 5.8320746421813965
+gpu_peak_reserved_gb: 6.083984375
+gpu_total_memory_gb: 5.99658203125
+model_parameter_count: 333921792
+model_weights_size_mb: 1273.8676376342773
+model_bundle_size_mb: 1277.2651166915894
+training_samples: 460
+validation_samples: 101
+test_set_used_during_training: False
+early_stopping_min_delta: 0.0001
+early_stopping_patience: 5

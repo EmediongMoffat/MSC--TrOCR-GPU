@@ -1,0 +1,101 @@
+{
+    "test_images": 51,
+    "correct_vins": 49,
+    "incorrect_vins": 2,
+    "accuracy_percent": 96.07843137254902,
+    "exact_string_accuracy": 0.9607843137254902,
+    "character_accuracy": 0.9976931949250288,
+    "character_accuracy_percent": 99.76931949250289,
+    "character_error_rate_CER": 0.002306805074971165,
+    "word_string_error_rate": 0.039215686274509776,
+    "precision_micro": 0.9976931949250288,
+    "recall_micro": 0.9976931949250288,
+    "f1_micro": 0.9976931949250288,
+    "AUC_ROC": 0.9795918367346939,
+    "total_edit_distance": 2,
+    "total_reference_characters": 867,
+    "test_loss_teacher_forced": 0.022077029899161237,
+    "experiment": "EXP-TROCR-VIN-002",
+    "checkpoint": "C:\\Users\\emedi\\OneDrive - Coventry University\\PROJECT DOCUMENTS\\MSC-PyTorch-TrOCR-GPU\\results\\EXP-TROCR-VIN-002\\best_model",
+    "test_manifest": "C:\\Users\\emedi\\OneDrive - Coventry University\\PROJECT DOCUMENTS\\MSC-PyTorch-TrOCR-GPU\\data\\processed\\TROCR_YOLO_PREDICTED_LINE_RECOGNITION\\rec_gt_test.txt",
+    "test_set_used_for_training": false,
+    "test_set_used_for_model_selection": false,
+    "device": "cuda",
+    "gpu_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "model_parameters": 333921792,
+    "image_width": 768,
+    "image_height": 128,
+    "max_target_length": 32,
+    "batch_size": 4,
+    "num_beams": 1,
+    "inference_total_seconds": 3.3958902999584097,
+    "inference_latency_ms_per_image_mean": 66.58608431290999,
+    "inference_latency_ms_per_image_median_amortised": 66.76182500086725,
+    "inference_latency_ms_per_image_p95_amortised": 76.13754166717021,
+    "batch_latency_ms_mean": 261.2223307660315,
+    "batch_latency_ms_median": 261.73189998371527,
+    "batch_latency_ms_p95": 299.8395999951754,
+    "inference_throughput_images_per_second": 15.0181529717331,
+    "gpu_total_memory_gib": 5.99658203125,
+    "gpu_peak_allocated_gib": 1.5548515319824219,
+    "gpu_peak_reserved_gib": 1.630859375,
+    "recognition_examples": [
+        {
+            "filename": "example_01_correct.png",
+            "image_path": "crops/test/VIN_2025-03-25-14-43-57_bmp.rf.8835d3677e9a54fde642ec2e732e56f7_yolo_line.png",
+            "ground_truth": "5J8TC2H55SL023535",
+            "prediction": "5J8TC2H55SL023535",
+            "exact_match": true
+        },
+        {
+            "filename": "example_02_correct.png",
+            "image_path": "crops/test/VIN_2025-03-25-14-56-55_bmp.rf.9818f3c980040a30ec434e79eb2ea860_yolo_line.png",
+            "ground_truth": "5J8TC2H51SL023547",
+            "prediction": "5J8TC2H51SL023547",
+            "exact_match": true
+        },
+        {
+            "filename": "example_03_correct.png",
+            "image_path": "crops/test/VIN_2025-03-25-17-01-10_bmp.rf.5612240290ee66ef988602dcc477e638_yolo_line.png",
+            "ground_truth": "5J8TC2H42SL023581",
+            "prediction": "5J8TC2H42SL023581",
+            "exact_match": true
+        },
+        {
+            "filename": "example_04_correct.png",
+            "image_path": "crops/test/VIN_2025-03-25-17-35-09_bmp.rf.3891be849dd6ab2324ba5871bbe3d9d2_yolo_line.png",
+            "ground_truth": "5J8TC2H46SL023597",
+            "prediction": "5J8TC2H46SL023597",
+            "exact_match": true
+        },
+        {
+            "filename": "example_05_incorrect.png",
+            "image_path": "crops/test/VIN_2025-03-25-14-41-35_bmp.rf.12242d9623090784e8faaf88e6554481_yolo_line.png",
+            "ground_truth": "5J8TC2H58SL023531",
+            "prediction": "5J8TC2H58SL023561",
+            "exact_match": false
+        },
+        {
+            "filename": "example_06_incorrect.png",
+            "image_path": "crops/test/VIN_2025-03-25-16-50-14_bmp.rf.a52f802d3f4aeeb4b72be40af62d8505_yolo_line.png",
+            "ground_truth": "5J8TC2H50SL023569",
+            "prediction": "5J8TC2H50SL023669",
+            "exact_match": false
+        },
+        {
+            "filename": "example_07_correct.png",
+            "image_path": "crops/test/VIN_2025-03-25-17-40-37_bmp.rf.55f990f3275c45528f3b078f640e1145_yolo_line.png",
+            "ground_truth": "5J8TC2H47SL023611",
+            "prediction": "5J8TC2H47SL023611",
+            "exact_match": true
+        },
+        {
+            "filename": "example_08_correct.png",
+            "image_path": "crops/test/VIN_2025-03-25-17-42-13_bmp.rf.616ae0bc58dd486a5a3c96dd28eb2a61_yolo_line.png",
+            "ground_truth": "5J8TC2H42SL023614",
+            "prediction": "5J8TC2H42SL023614",
+            "exact_match": true
+        }
+    ],
+    "evaluation_timestamp": "2026-10-31T10:38:35.931295"
+}

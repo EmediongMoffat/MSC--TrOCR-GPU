@@ -1,0 +1,56 @@
+======================================================================
+EXP-TROCR-VIN-002 - TEST EVALUATION SUMMARY
+======================================================================
+
+EXPERIMENT
+Name: EXP-TROCR-VIN-002
+Checkpoint: C:\Users\emedi\OneDrive - Coventry University\PROJECT DOCUMENTS\MSC-PyTorch-TrOCR-GPU\results\EXP-TROCR-VIN-002\best_model
+Test manifest: C:\Users\emedi\OneDrive - Coventry University\PROJECT DOCUMENTS\MSC-PyTorch-TrOCR-GPU\data\processed\TROCR_YOLO_PREDICTED_LINE_RECOGNITION\rec_gt_test.txt
+Device: cuda
+GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+
+TEST RECOGNITION METRICS
+----------------------------------------
+test_images: 51
+correct_vins: 49
+incorrect_vins: 2
+accuracy_percent: 96.07843137254902
+exact_string_accuracy: 0.9607843137254902
+character_accuracy_percent: 99.76931949250289
+character_error_rate_CER: 0.002306805074971165
+word_string_error_rate: 0.039215686274509776
+precision_micro: 0.9976931949250288
+recall_micro: 0.9976931949250288
+f1_micro: 0.9976931949250288
+AUC_ROC: 0.9795918367346939
+test_loss_teacher_forced: 0.022077029899161237
+
+INFERENCE PERFORMANCE
+----------------------------------------
+inference_total_seconds: 3.3958902999584097
+inference_latency_ms_per_image_mean: 66.58608431290999
+inference_latency_ms_per_image_median_amortised: 66.76182500086725
+inference_latency_ms_per_image_p95_amortised: 76.13754166717021
+batch_latency_ms_mean: 261.2223307660315
+batch_latency_ms_median: 261.73189998371527
+batch_latency_ms_p95: 299.8395999951754
+inference_throughput_images_per_second: 15.0181529717331
+
+GPU MEMORY
+----------------------------------------
+gpu_total_memory_gib: 5.99658203125
+gpu_peak_allocated_gib: 1.5548515319824219
+gpu_peak_reserved_gib: 1.630859375
+
+EVALUATION INTEGRITY
+----------------------------------------
+Test set used for training: NO
+Test set used for model selection: NO
+Model weights updated during evaluation: NO
+
+OUTPUT FILES
+----------------------------------------
+Predictions CSV: C:\Users\emedi\OneDrive - Coventry University\PROJECT DOCUMENTS\MSC-PyTorch-TrOCR-GPU\results\EXP-TROCR-VIN-002\test_evaluation\run_20261031_103822\predictions\test_predictions.csv
+Recognition examples: C:\Users\emedi\OneDrive - Coventry University\PROJECT DOCUMENTS\MSC-PyTorch-TrOCR-GPU\results\EXP-TROCR-VIN-002\test_evaluation\run_20261031_103822\recognition_examples
+Contact sheet: C:\Users\emedi\OneDrive - Coventry University\PROJECT DOCUMENTS\MSC-PyTorch-TrOCR-GPU\results\EXP-TROCR-VIN-002\test_evaluation\run_20261031_103822\recognition_examples_contact_sheet.jpg
+Metrics JSON: C:\Users\emedi\OneDrive - Coventry University\PROJECT DOCUMENTS\MSC-PyTorch-TrOCR-GPU\results\EXP-TROCR-VIN-002\test_evaluation\run_20261031_103822\test_metrics.json
